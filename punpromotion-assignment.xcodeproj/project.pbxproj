@@ -13,6 +13,9 @@
 		C04E47A42C047EFA002FBA27 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C04E47A32C047EFA002FBA27 /* Base */; };
 		C04E47A62C047EFB002FBA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04E47A52C047EFB002FBA27 /* Assets.xcassets */; };
 		C04E47A92C047EFB002FBA27 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C04E47A82C047EFB002FBA27 /* Base */; };
+		C04E47B12C0480FD002FBA27 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E47B02C0480FD002FBA27 /* WeatherTableViewCell.swift */; };
+		C04E47B62C04838C002FBA27 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E47B52C04838C002FBA27 /* WeatherData.swift */; };
+		C04E47BA2C0483CE002FBA27 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E47B92C0483CE002FBA27 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C04E47A52C047EFB002FBA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C04E47A82C047EFB002FBA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C04E47AA2C047EFB002FBA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C04E47B02C0480FD002FBA27 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		C04E47B52C04838C002FBA27 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		C04E47B92C0483CE002FBA27 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		C04E479B2C047EFA002FBA27 /* punpromotion-assignment */ = {
 			isa = PBXGroup;
 			children = (
-				C04E479C2C047EFA002FBA27 /* AppDelegate.swift */,
+				C04E47B22C048329002FBA27 /* Model */,
+				C04E47B32C048331002FBA27 /* View */,
+				C04E47B42C048342002FBA27 /* Controller */,
 				C04E479E2C047EFA002FBA27 /* SceneDelegate.swift */,
-				C04E47A02C047EFA002FBA27 /* ViewController.swift */,
-				C04E47A22C047EFA002FBA27 /* Main.storyboard */,
+				C04E479C2C047EFA002FBA27 /* AppDelegate.swift */,
 				C04E47A52C047EFB002FBA27 /* Assets.xcassets */,
 				C04E47A72C047EFB002FBA27 /* LaunchScreen.storyboard */,
 				C04E47AA2C047EFB002FBA27 /* Info.plist */,
 			);
 			path = "punpromotion-assignment";
+			sourceTree = "<group>";
+		};
+		C04E47B22C048329002FBA27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C04E47B52C04838C002FBA27 /* WeatherData.swift */,
+				C04E47B92C0483CE002FBA27 /* WeatherManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C04E47B32C048331002FBA27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C04E47A22C047EFA002FBA27 /* Main.storyboard */,
+				C04E47B02C0480FD002FBA27 /* WeatherTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C04E47B42C048342002FBA27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C04E47A02C047EFA002FBA27 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04E47B12C0480FD002FBA27 /* WeatherTableViewCell.swift in Sources */,
+				C04E47BA2C0483CE002FBA27 /* WeatherManager.swift in Sources */,
+				C04E47B62C04838C002FBA27 /* WeatherData.swift in Sources */,
 				C04E47A12C047EFA002FBA27 /* ViewController.swift in Sources */,
 				C04E479D2C047EFA002FBA27 /* AppDelegate.swift in Sources */,
 				C04E479F2C047EFA002FBA27 /* SceneDelegate.swift in Sources */,
