@@ -61,14 +61,12 @@ extension ViewController {
                 output.append(value)
                 temp2DArray.append(output)
                 output = [Double]()
-//                print("inner: ", index)
             }
             output.append(value)
-//            print("outer", index)
         }
         
 //        print("Last Output: ", output)
-//        print("temp2DArray: ", temp2DArray)
+        print("temp2DArray: ", temp2DArray)
         findMinMaxTemp()
     }
     
@@ -97,6 +95,10 @@ extension ViewController: WeatherManagerDelegate {
         
         DispatchQueue.main.async {
             self.mainTemp.text = String(weather.current.temperature_2m)
+            if let min = self.minMaxArr[0][0], let max = self.minMaxArr[0][1] {
+                self.mainTemp.text = String(min) + "°/" + String(max) + "°"
+                
+            }
             self.table.reloadData()
         }
     }
