@@ -16,9 +16,6 @@ class ViewController: UIViewController {
     // Protocol
     var weatherManager = WeatherManager()
     
-    // The data where displays in table's cell
-    var data: [WeatherData] = []
-    
     // Properties to calculate the weekdays and temperature (Hard Code)
     var arrayTemp = [Double]()
     var temp2DArray = [[Double]]()
@@ -53,8 +50,8 @@ extension ViewController {
                 arrayDate.append(arrayDateTime[temp])
             }
         }
-        
-//        print("arrayData: ", arrayDate)
+//        print(arrayDateTime)
+//        print("arrayDate: ", arrayDate)
     }
     
     func create2DTempArr() {
